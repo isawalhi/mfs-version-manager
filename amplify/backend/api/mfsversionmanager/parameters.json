@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "mfsversionmanager",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authmfsversionmanager5eb91812",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
